@@ -12,42 +12,43 @@
   <body>
     <form>
     
-    
-		<img src="../-imagens/logo MVP tech - sem fundo.png" id="icone-MVP"><br>
-    
+    <div>
+		<img src="../-imagens/logo MVP tech - sem fundo.png" id="icone-MVP">
+    </div>
       <div>
       <label>E-mail:</label>
       <input type="email" placeholder="seu@email.com" onchange="onChangeEmail()" id="email"  >
-       <div class="error" id="email-required-error">
+       <span class="error" id="email-required-error">
                 Email é obrigatório
-            </div>
-            <div class="error" id="email-invalid-error">
+       </span>
+       <span class="error" id="email-invalid-error">
                 Email é inválido
-            </div>
+       </span>
 
       <label>Senha:</label>
       <input type="password"  placeholder="senha" onchange="onChangePassword()" id="password">
-       <div class="error" id="password-required-error">
+       <span class="error" id="password-required-error">
                 Senha é obrigatório
-            </div>
-            <div class="error" id="password-min-length-error">
+       </span>
+       <span class="error" id="password-min-length-error">
                 Senha deve ter pelo menos 6 caracteres
-            </div>
+       </span>
       
-      <label>Confirmar senha:</label>
-      <input type="password" placeholder="Confirmar senha"
- id="confirmPassword" onchange="onChangeConfirmPassword()" >
-        <div class="error" id="password-doesnt-match-error">
+       <label>Confirmar senha:</label>
+       <input type="password" placeholder="Confirmar senha"
+        id="confirmPassword" onchange="onChangeConfirmPassword()" >
+       <span class="error" id="password-doesnt-match-error">
                 Senha e Confirmar senha devem ser iguais
-            </div>
-
-      <button type="button" id="register-button" disabled="true" onclick="register()">Registrar</button>
-      <button type="button" onclick="history.back()">Login</button>
+       </span>
+     
+      <button type="button" class="mainButton" id="register-button" disabled="true" onclick="register()">Registrar</button>
+      <button type="button" class="mainButton" onclick="history.back()">Login</button>
+      
     </div>
     
     </form>
   </body>
-  
+  <link rel="stylesheet" href="../-global/global.css">
   <link rel="stylesheet" href="mvptech-cadastrar.css">
   <script src="mvptech-cadastrar.js"></script>
   <script src="../-global/validate.js"></script>

@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(51, 51, 51);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 10px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 40px;
+    padding: 50px;
+
+  }
+  
+  #icone-MVP{
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* altere o tamanho conforme desejado */
+  }
+ div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 250px;
+}
+  input[type="email"],
+  input[type="password"] {
+    width: 250px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #1A1F51;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+
+   ::placeholder {
+    color: #d3d3d3;
+    }
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin: 10px; /* altere o espacamento conforme desejado */
+  }
+   footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+  }
+  .mainButton {
+    background-color: #4B73F5;
+    color: white;
+    padding: 14px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 250px;
+    font-size: 16px;
+  }
+  .mainButton :hover{
+    background-color: #1A1F51;
+  }
+
+  button[disabled]{
+    opacity: 0.6;
+    border: none;
+    cursor: not-allowed;
+  }
+
+  .error {
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin: 8px 0;
+  }

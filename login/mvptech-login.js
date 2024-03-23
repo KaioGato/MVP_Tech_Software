@@ -21,7 +21,7 @@ const firebaseConfig = {
 
    function forSelectWindow() {    
       showLoading();
-    firebase.auth().signInWithEmailAndPassword(
+      firebase.auth().signInWithEmailAndPassword(
       form.email().value,form.password().value
       ).then(response => {
          
@@ -30,7 +30,7 @@ const firebaseConfig = {
       hideLoading();
       alert(getErrorMessage(error) );
       
-     }); 
+     });
    }
 
    function getErrorMessage(error){
@@ -96,7 +96,7 @@ const firebaseConfig = {
       email: () => document.getElementById('email'),
       emailInvalidError: () => document.getElementById('email-invalid-error'),
       emailRequiredError: () => document.getElementById('email-required-error'),
-      loginButton: () => document.getElementById('login'),
+      loginButton: () => document.getElementById('loginButton'),
       password: () => document.getElementById('password'),
       passwordRequiredError: () => document.getElementById('password-required-error'),
       recoverPassword: () => document.getElementById('esqueceu')

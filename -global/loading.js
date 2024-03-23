@@ -1,6 +1,6 @@
 function showLoading(){
     const div = document.createElement("div");
-    div.classList.add("loading","centralize");
+    div.classList.add("loading");
 
     const label = document.createElement("label");
     label.classList.add("carregando");

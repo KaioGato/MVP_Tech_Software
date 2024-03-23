@@ -1,14 +1,17 @@
- const firebaseConfig = {
-        apiKey: "AIzaSyAf7lPo2WVwNaHZUEoaaRAOCpcVtDY5ADk",
-        authDomain: "mvp-tech-90e7b.firebaseapp.com",
-        databaseURL: "https://mvp-tech-90e7b-default-rtdb.firebaseio.com",
-        projectId: "mvp-tech-90e7b",
-        storageBucket: "mvp-tech-90e7b.appspot.com",
-        messagingSenderId: "221450960297",
-        appId: "1:221450960297:web:266a2260defcbab180d8b8",
-        measurementId: "G-4B1239EM0C"
-    };
-    firebase.initializeApp(firebaseConfig);
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCRyQZT1_N8ABPBsuIETbAyIFoMzoNav6c",
+  authDomain: "mvp-tech-f49db.firebaseapp.com",
+  projectId: "mvp-tech-f49db",
+  storageBucket: "mvp-tech-f49db.appspot.com",
+  messagingSenderId: "174443315764",
+  appId: "1:174443315764:web:2f6d144195fa64bd92c061",
+  measurementId: "G-S89FZ7EWZR"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
      // Cria uma referência para o nó do Realtime Database
     const databaseRef = firebase.database().ref("comando");
